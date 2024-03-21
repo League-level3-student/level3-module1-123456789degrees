@@ -65,7 +65,7 @@ public class _00_ArrayListDemo {
          * Adding a value into the middle of the list
          */
         System.out.println("Here's adding into the middle of the ArrayList:");
-        
+
         // Add element into index 2
         numbers.add(2, 22222);
         
