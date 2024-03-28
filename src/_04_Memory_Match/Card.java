@@ -28,6 +28,7 @@ public class Card extends JButton {
 
     public Card( int value ) {
         this.value = value;
+        this.faceUpImageFilename = cardImagesPath + value + ".png";
         setup();
     }
     
