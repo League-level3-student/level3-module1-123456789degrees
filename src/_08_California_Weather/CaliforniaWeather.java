@@ -88,6 +88,12 @@ public class CaliforniaWeather implements ActionListener {
 			String b = JOptionPane.showInputDialog("Enter the maximum temperature");
 			int min = Integer.parseInt(a);
 			int max = Integer.parseInt(b);
+			for (String city : weatherData.keySet()) {
+				double temp = weatherData.get(city).temperatureF;
+				if (min <= temp && max >= temp) {
+					System.out.println(city);
+				}
+			}
 		}
 	}
 }
